@@ -11,7 +11,7 @@
 
 ## How to work with me
 
-<!-- 3-5 bullet pointów: styl komunikacji, co Cię motywuje, czego nie tolerujesz, gdzie AI ma Cię popychać -->
+<!-- 5-8 bullet pointów: styl komunikacji, mocne strony, blind spots, jak AI ma framować rekomendacje, gdzie Cię popychać -->
 <!-- Jeśli masz wyniki Gallup CliftonStrengths, DISC, MBTI lub innego testu - wklej je do rozmowy z AI i poproś o wypełnienie tej sekcji -->
 
 ## Current goal
