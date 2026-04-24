@@ -32,7 +32,17 @@ To jest drugi mózg Product Buildera. Przeczytaj `8-System/about.md` zanim odpow
 
 ## Workflowy
 
-Trzy operacje. Wywołujesz je językiem naturalnym - nie ma magicznych komend.
+Cztery operacje. Wywołujesz je językiem naturalnym - nie ma magicznych komend.
+
+### Rozróżnianie: wiedza czy projekt?
+
+Gdy człowiek przynosi coś nowego, nie zawsze jest oczywiste dokąd to trafia. Zasada:
+
+- **Wiedza ogólna** (framework, koncept, branżowy insight, artykuł) → Ingest → Knowledge
+- **Praca projektowa** (decyzja, prototyp, wynik testu, notatka z postępu) → Update → Projects
+- **Nie wiesz?** Zapytaj: *"To wygląda jak [X]. Chcesz żebym dodał to do Knowledge jako wiedzę ogólną, czy do projektu [nazwa] jako postęp w pracy?"*
+
+Nigdy nie zgaduj. Lepiej zapytać raz niż włożyć coś w złe miejsce.
 
 ### 1. Ingest - nowe źródło z Inbox → wiki w Knowledge
 
@@ -61,6 +71,19 @@ Gdy człowiek pracuje nad projektem:
 2. Korzystaj z `4-Knowledge/` i `6-Templates/` gdy potrzeba
 3. Wszystkie outputy zapisuj W folderze projektu (nie globalnie)
 4. Gdy pojawi się insight ponadprojektowy - zaproponuj dodanie do Knowledge
+
+### 4. Update - aktualizacja projektu
+
+Gdy człowiek mówi "oto co się wydarzyło", "aktualizuj projekt", "mam update":
+
+1. Przeczytaj `brief.md` projektu żeby mieć kontekst
+2. Zapytaj o to, czego brakuje: "Co zdecydowałeś? Co zbudowałeś? Czego się nauczyłeś?"
+3. Zapisz ustrukturyzowane notatki do odpowiednich podfolderów projektu:
+   - Decyzja (np. "wybrałem feature X bo Y") → `decisions/`
+   - Prototyp (np. "zbudowałem to w Lovable, link tutaj") → `prototypes/`
+   - Nauka/analiza (np. "to nie zadziałało bo Z") → `analyses/`
+4. Jeśli zakres projektu się zmienił - zaproponuj aktualizację `brief.md`
+5. **Sprawdź czy coś jest większe niż ten projekt.** Jeśli insight dotyczy nie tylko tego projektu (np. "marketplace'y zachowują się inaczej niż myślałem") - zaproponuj dodanie do Knowledge jako stronę wiki
 
 ---
 
