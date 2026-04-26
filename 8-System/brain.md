@@ -89,6 +89,14 @@ Gdy człowiek mówi "oto co się wydarzyło", "aktualizuj projekt", "mam update"
 
 ## Konwencje
 
+### Nazewnictwo plików w Knowledge
+
+- **Czytelne nazwy, nie slugi.** Pliki nazywaj jak tytuły: `Metody Discovery.md`, nie `metody-discovery.md`. W Obsidian nazwa pliku = tytuł wyświetlany.
+- **Spacje, wielkie litery, znaki specjalne OK.** Obsidian je obsługuje. Używaj `&` zamiast `and` dla zwięzłości.
+- **Podfoldery tematyczne.** Gdy Knowledge zacznie rosnąć (10+ stron), grupuj strony w podfoldery po domenie (np. `Discovery/`, `Strategia/`, `AI & Narzędzia/`). Nie twórz podfolderu dla jednej strony - minimum 2-3 strony.
+
+### Struktura stron
+
 - **Nagłówek YAML** na każdej stronie w Knowledge:
   ```
   ---
@@ -97,7 +105,7 @@ Gdy człowiek mówi "oto co się wydarzyło", "aktualizuj projekt", "mam update"
   sources: [lista plików źródłowych]
   ---
   ```
-- **Linki:** `[[nazwa-strony]]` między stronami Knowledge (kompatybilne z Obsidian)
+- **Linki:** `[[Nazwa Strony]]` między stronami Knowledge (kompatybilne z Obsidian). Używaj pełnej czytelnej nazwy, nie slugów.
 - **Cytaty:** `[source: nazwa-pliku.md]` przy każdym twierdzeniu
 - **Sprzeczności:** nigdy nie nadpisuj cichaczem. Oznacz jawnie.
 - **Język:** nazwy folderów i plików po angielsku, treść po polsku
