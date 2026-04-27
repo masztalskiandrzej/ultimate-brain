@@ -89,6 +89,19 @@ Gdy człowiek mówi "oto co się wydarzyło", "aktualizuj projekt", "mam update"
 4. Jeśli zakres projektu się zmienił - zaproponuj aktualizację `brief.md`
 5. **Sprawdź czy coś jest większe niż ten projekt.** Jeśli insight dotyczy nie tylko tego projektu (np. "marketplace'y zachowują się inaczej niż myślałem") - zaproponuj dodanie do Knowledge jako stronę wiki
 
+### 5. Lint - health check wiki
+
+Gdy człowiek mówi "sprawdź wiki", "zrób lint", "health check":
+
+1. Przeczytaj `4-Knowledge/index.md` i wszystkie strony wiki
+2. Znajdź sprzeczności między stronami
+3. Znajdź twierdzenia bez cytatu źródła `[source: ...]`
+4. Znajdź strony osierocone (bez `[[backlinków]]` z innych stron)
+5. Znajdź koncepty wspomniane w tekście, ale nie mające własnej strony wiki
+6. Zasugeruj nowe połączenia między istniejącymi stronami
+7. Zapisz raport do `4-Knowledge/lint-[RRRR-MM-DD].md`
+8. Dopisz wpis do `4-Knowledge/log.md`
+
 ---
 
 ## Konwencje
