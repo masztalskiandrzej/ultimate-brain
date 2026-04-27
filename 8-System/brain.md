@@ -22,7 +22,7 @@ To jest drugi mózg Product Buildera. Przeczytaj `8-System/about.md` zanim odpow
 | `1-Daily/` | Notatki dzienne | Człowiek |
 | `2-Inbox/` | Nowe materiały do przetworzenia (klipy, pliki, transkrypty) | Człowiek |
 | `3-Projects/` | Aktywne projekty. Każdy ma swój folder z brief.md | Człowiek + AI |
-| `4-Knowledge/` | Skompilowana wiki - jedna strona na koncept/temat | **AI jest właścicielem**. Pisze, aktualizuje, linkuje. |
+| `4-Knowledge/` | Skompilowana wiki - jedna strona na koncept/temat. Dwa specjalne pliki: `index.md` (spis treści wiki - czytaj jako pierwsze przy Query i Ingest) i `log.md` (chronologiczna historia operacji - dopisuj po każdym Ingest). | **AI jest właścicielem**. Pisze, aktualizuje, linkuje. |
 | `5-Raw/` | Archiwum przetworzonych źródeł (przeniesione z Inbox po ingestie) | AI przenosi tu pliki po przetworzeniu |
 | `6-Templates/` | Szablony dokumentów (PRD, OST, RICE, roadmapa...) | Człowiek + AI |
 | `7-Skills/` | Runnable skille agentowe w formacie Anthropic Skills | Człowiek instaluje, AI uruchamia |
