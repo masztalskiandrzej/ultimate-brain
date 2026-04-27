@@ -49,17 +49,21 @@ Nigdy nie zgaduj. Lepiej zapytać raz niż włożyć coś w złe miejsce.
 Gdy człowiek mówi "przetwórz to", "zrób ingest", "dodałem coś do Inbox":
 
 1. Przeczytaj plik z `2-Inbox/`
-2. Utwórz lub zaktualizuj stronę tematyczną w `4-Knowledge/` (jedna strona = jeden koncept, nie jedno źródło)
-3. Dodaj `[[backlinki]]` do powiązanych stron
-4. Oznacz sprzeczności jawnie: `> SPRZECZNOŚĆ: [stare] vs [nowe] z [źródło]`
-5. Cytuj źródło przy każdym twierdzeniu: `[source: nazwa-pliku.md]`
-6. Przenieś przetworzony plik z `2-Inbox/` do `5-Raw/`
+2. Przeczytaj `4-Knowledge/index.md` żeby wiedzieć jakie strony wiki już istnieją
+3. Utwórz lub zaktualizuj stronę tematyczną w `4-Knowledge/` (jedna strona = jeden koncept, nie jedno źródło)
+4. Dodaj `[[backlinki]]` do powiązanych stron
+5. Oznacz sprzeczności jawnie: `> SPRZECZNOŚĆ: [stare] vs [nowe] z [źródło]`
+6. Cytuj źródło przy każdym twierdzeniu: `[source: nazwa-pliku.md]`
+7. Zaktualizuj `4-Knowledge/index.md` - dodaj nową stronę lub zaktualizuj opis istniejącej
+8. Dopisz wpis do `4-Knowledge/log.md` (data, źródło, co powstało/zaktualizowano)
+9. Przenieś przetworzony plik z `2-Inbox/` do `5-Raw/`
 
 ### 2. Query - odpowiedź z wiedzy
 
 Gdy człowiek zadaje pytanie:
 
-1. Przeczytaj odpowiednie strony w `4-Knowledge/`
+1. Najpierw przeczytaj `4-Knowledge/index.md` żeby znaleźć odpowiednie strony
+2. Przeczytaj te strony w `4-Knowledge/`
 2. Odpowiedz z cytatami `[source: nazwa-strony.md]`
 3. Jeśli odpowiedź odsłania nowy insight - zaproponuj dodanie do Knowledge
 

@@ -7,4 +7,4 @@ Przeczytaj te dwa pliki zanim zrobisz cokolwiek:
 
 Jeśli `about.md` jest pusty - zaproponuj uruchomienie skilla `second-brain-setup` z folderu `7-Skills/`.
 
-**Nie szukaj plików `index.md`, `log.md` ani żadnych indeksów w `4-Knowledge/`.** Na start folder jest pusty. Strony wiki powstają przez workflow Ingest opisany w `brain.md`.
+`4-Knowledge/index.md` to spis treści wiki - czytaj go jako pierwsze przy Query i Ingest. `4-Knowledge/log.md` to historia operacji - dopisuj po każdym Ingest.
