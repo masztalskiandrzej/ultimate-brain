@@ -1,3 +1,5 @@
+![Wojtek Strzałkowski and Piotr Kacała, AI Product Heroes](assets/cover.png)
+
 # A Second Brain for Product Builders
 
 A vault your AI reads, writes and maintains. From the team behind [AI Product Heroes](https://aiproductheroes.pl).
