@@ -38,6 +38,7 @@ Read `4-Knowledge/index.md`, then every wiki page. This is the one workflow that
 | `ERROR` | Two pages that contradict each other |
 | `ERROR` | Claims with no `[source: ...]` citation |
 | `ERROR` | Index entries pointing at pages that do not exist, or pages missing from the index |
+| `ERROR` | A `sources:` entry or `[source: ...]` citation naming a file that is not in `5-Raw/` |
 | `WARN` | Orphan pages - nothing links to them |
 | `WARN` | Pages marked `status: needs_update`, or with `last_updated` older than six months |
 | `WARN` | Pages with `source_count: 1` that assert more than one source can carry |
@@ -47,6 +48,8 @@ Read `4-Knowledge/index.md`, then every wiki page. This is the one workflow that
 | `INFO` | Connections worth making between existing pages |
 
 Every finding names the page and says what to do about it. "Page X has issues" is not a finding.
+
+On the source check: a citation is only checkable if the file it names sits in `5-Raw/`. Match on the file name without its extension and compare character for character - a curly apostrophe in the archived file and a straight one in the citation are two different files, and neither looks wrong when you read it on its own. When a source really is absent, say which fix applies: archive the file, or correct the citation. Those are opposite moves and guessing wrong makes it worse.
 
 ### 4. Write the report
 
@@ -67,6 +70,8 @@ Checked [n] pages. Found [x] errors, [y] warnings, [z] notes.
 
 - **[[Page Name]]** - contradicts [[Other Page]] on [claim]. `[source-a.md]` says X,
   `[source-b.md]` says Y. Neither is flagged.
+- **[[Page Name]]** - cites `some-source.md`, not present in `5-Raw/`. The claim reads as
+  documented and cannot be checked.
 
 ## WARN
 
@@ -100,6 +105,7 @@ If they say go ahead, the fixes are a separate pass: make them, append an `updat
 ## Self-check
 
 - Every finding names a page and a next action
+- Every cited source was checked against `5-Raw/`, character for character
 - The report is on disk at `4-Knowledge/lint-[YYYY-MM-DD].md`
 - `4-Knowledge/log.md` has a `lint` entry with the counts
 - The suggestions are ranked
