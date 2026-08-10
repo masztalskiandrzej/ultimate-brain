@@ -9,7 +9,7 @@ Take a concept out of `4-Knowledge/`, explain it in words a child owns, and mark
 
 Teach in the language the human is using.
 
-**This skill writes nothing.** It happens in the conversation. For the whole run the vault is read-only: no new page, no output file, no log entry, no frontmatter touched.
+**This skill reads the wiki and never edits it.** It saves the session to `9-Outputs/` and logs it, so there is a record of what got studied - but it creates no wiki page, changes no existing page, and touches nothing in `5-Raw/`. Learning is not ingesting.
 
 ## How to invoke
 
@@ -63,18 +63,54 @@ Three or four gaps is a good haul. Zero means you did not look hard enough, and 
 
 ### 5. Flip it
 
-Optional, and it is where the technique earns its name. Ask the human to explain one piece back in their own words, then ask one follow-up that goes a level deeper than their answer.
+Ask the human to explain one piece back in their own words, then ask one follow-up that goes a level deeper than their answer. Skip it only if they say so.
 
-Explaining finds the gaps of whoever is doing the explaining. When you explain, it finds the wiki's gaps. When they explain, it finds theirs. The second one is the one they came for, even if they did not ask for it.
+Explaining finds the gaps of whoever is doing the explaining. When you explain, it finds the wiki's gaps. When they explain, it finds theirs. The second one is what they came for, even if they did not ask for it. Whatever they say back goes into the record - that is the part worth rereading in six months.
 
-### 6. Say what would close each gap
+### 6. Save the session
 
-One line each, phrased as something they could actually do:
+Write `9-Outputs/[YYYY-MM-DD]-feynman-[concept-slug].md`:
 
-- "The page says X drives Y and never says how. A source explaining the mechanism would close it."
-- "Four pages use [term] and none defines it. That is a page waiting to be written."
+```markdown
+---
+concept: [Page Name]
+date: [YYYY-MM-DD]
+pages: [wiki pages read]
+gaps: [how many]
+---
 
-Offer to run `ingest` on a source they name, or `lint` if the wiki looks structurally thin. Wait to be asked.
+# Feynman: [Concept]
+
+## The explanation
+[what you said, in the plain language you said it]
+
+## Where it went thin
+**Wiki:** [gaps in the pages]
+**Sources:** [gaps the sources never covered]
+**Mine:** [what you could not make simple]
+
+## What would close them
+- [one line per gap, phrased as something they could do]
+
+## What they said back
+[their explanation from step 5, and where the follow-up landed. Skip the
+section if step 5 did not run.]
+```
+
+Then append to `4-Knowledge/log.md`:
+
+```
+## [YYYY-MM-DD] query | feynman: [Concept]
+Pages read: Page A, Page B
+Output: 9-Outputs/YYYY-MM-DD-feynman-slug.md
+Gaps: x wiki, y sources, z mine
+```
+
+It is a `query` action because that is what it is: reading the wiki and producing something from it. The `feynman:` marker makes the study sessions easy to pick out later.
+
+### 7. Offer, do not act
+
+Gaps are worth fixing, but fixing them is a different job. Offer to run `ingest` on a source they name, or `lint` if the wiki looks structurally thin. Wait to be asked.
 
 ## Self-check
 
@@ -82,10 +118,10 @@ Offer to run `ingest` on a source they name, or `lint` if the wiki looks structu
 - Did the explanation stay out of the concept's own vocabulary?
 - Is there a concrete example with people or objects in it?
 - Are the gaps specific, rather than "this section could be clearer"?
-- Did you write zero files?
+- Is the session in `9-Outputs/` and the entry in `4-Knowledge/log.md`?
 
 ## Hard constraints
 
-- Nothing gets written. Not a page, not an output, not a log entry. This skill reads and talks.
-- Gaps are reported to the human. Filing them is `ingest` or `lint`, and only when asked.
-- Sources in `5-Raw/` stay read-only.
+- No wiki page is created or edited. `4-Knowledge/log.md` is the one file in that folder this skill appends to.
+- `5-Raw/` is read-only, as always. Reading a source to understand it is not ingesting it.
+- Filing a gap into the wiki is `ingest` or `lint`, and only when asked.
