@@ -34,7 +34,7 @@ We have run this method on our own work for a year and taught it to people who t
 
 ## The skills
 
-Five workflows, one skill each, plus setup and video capture. They trigger on their own when the conversation calls for them - say "process what I dropped in the inbox" and `ingest` shows up - or you invoke them directly with `/query`.
+Five workflows, one skill each, plus setup, video capture and a way to find out whether you actually understand what you have collected. They trigger on their own when the conversation calls for them - say "process what I dropped in the inbox" and `ingest` shows up - or you invoke them directly with `/query`.
 
 | Skill | What it does |
 |---|---|
@@ -45,6 +45,7 @@ Five workflows, one skill each, plus setup and video capture. They trigger on th
 | **`project-update`** | Turns what happened into an artefact, a log entry and a fresh index row. The last two decay first because they produce nothing visible, and a stale index means the next session starts from a false picture. |
 | **`second-brain-setup`** | Writes your profile into `8-System/about.md`, from a pasted assessment (Gallup, DISC, MBTI) or a short interview. Re-run it after a role change and it updates only what moved. |
 | **`youtube`** | Turns a video into a source note with metadata, key ideas and quotes, then hands it to `ingest`. Wants `yt-dlp`; without it, it asks you to paste the transcript and carries on. |
+| **`feynman`** | Explains a page in words a twelve-year-old owns, then names every place the explanation went thin. Writes nothing - the gaps come back to you in the conversation, sorted into the wiki's fault, the sources' fault and its own. |
 
 The one to try first: drop three articles on one topic into `2-Inbox/`, run `ingest` on each, then ask `query` something none of them answers on its own.
 
