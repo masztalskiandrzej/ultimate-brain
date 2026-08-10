@@ -41,8 +41,13 @@ Read the page, the pages it links to, and where it gets thin, the original sourc
 - **One concrete example, early.** Something with people and objects in it, not "imagine a system where".
 - **Short sentences.** A sentence that needs a comma to survive is usually two sentences.
 - **Say why anyone should care before you say how it works.**
+- **Only what the page says.** If the wiki explains a mechanism, explain it. If it does not, that is a gap, and it goes in step 4. Do not supply the missing reasoning yourself, not even flagged as a guess - a flagged guess gets quoted back six months later as if the wiki said it.
 
-Do not cite inside the explanation - citations break plain language. List the pages you used underneath it instead.
+**Point at the source after each block**, not inside the sentences. One line under each chunk of explanation:
+
+`-> [[Page Name]] section "Heading"`
+
+Citations inside plain language wreck it. A pointer underneath lets the human jump straight to the paragraph you built that block from.
 
 ### 4. Name where it went thin
 
@@ -55,7 +60,7 @@ This is the part that matters. Go back over what you just said and find every pl
 
 Sort each one:
 
-- **Gap in the wiki** - the page is thin, hand-wavy, or asserts without explaining. Fixable, and you can say exactly how.
+- **Gap in the wiki** - the page is thin, hand-wavy, or asserts without explaining. Name what is missing and stop there. Answering it from your own knowledge turns a known hole into an invisible one.
 - **Gap in the sources** - the wiki faithfully reflects sources that never explained it either. Needs a new source, not a better page.
 - **Gap in you** - you read it and still cannot make it simple. Say that plainly. Fluent nonsense is worse than an admission.
 
@@ -82,7 +87,8 @@ gaps: [how many]
 # Feynman: [Concept]
 
 ## The explanation
-[what you said, in the plain language you said it]
+[what you said, in the plain language you said it, each block followed by
+its `-> [[Page]] section "Heading"` pointer]
 
 ## Where it went thin
 **Wiki:** [gaps in the pages]
@@ -95,6 +101,9 @@ gaps: [how many]
 ## What they said back
 [their explanation from step 5, and where the follow-up landed. Skip the
 section if step 5 did not run.]
+
+## Where to go next
+[the numbered moves from step 7]
 ```
 
 Then append to `4-Knowledge/log.md`:
@@ -108,9 +117,19 @@ Gaps: x wiki, y sources, z mine
 
 It is a `query` action because that is what it is: reading the wiki and producing something from it. The `feynman:` marker makes the study sessions easy to pick out later.
 
-### 7. Offer, do not act
+### 7. Give them somewhere to go
 
-Gaps are worth fixing, but fixing them is a different job. Offer to run `ingest` on a source they name, or `lint` if the wiki looks structurally thin. Wait to be asked.
+End every session with numbered next moves, so they can answer with a digit instead of composing a request. Three or four, drawn from what this session actually turned up - never a generic menu.
+
+Pull from:
+
+- **Dig into a gap** - "go one level down on [gap 2]" when the gap is interesting rather than just missing
+- **Go to the source** - name the file in `5-Raw/` that would settle it, so they can read the original
+- **Close it** - offer to run `ingest` on a source they bring, or `lint` if the page looked structurally thin
+- **Take it further** - explain a page this one links to, or the same page for a different audience: a client, a room, a sceptic
+- **Test the human** - re-explain one part after they have answered step 5, harder
+
+Fixing is a different job than studying. Offer, then wait to be asked.
 
 ## Self-check
 
@@ -118,6 +137,9 @@ Gaps are worth fixing, but fixing them is a different job. Offer to run `ingest`
 - Did the explanation stay out of the concept's own vocabulary?
 - Is there a concrete example with people or objects in it?
 - Are the gaps specific, rather than "this section could be clearer"?
+- Does every block carry a pointer back to the page and section it came from?
+- Is every sentence something the wiki says, rather than something you worked out?
+- Are the next moves numbered, and do they come from this session rather than a template?
 - Is the session in `9-Outputs/` and the entry in `4-Knowledge/log.md`?
 
 ## Hard constraints
