@@ -27,7 +27,7 @@ This is a product builder's second brain. Read `8-System/about.md` before you an
 | `4-Knowledge/` | The compiled wiki - one page per concept. Two special files: `index.md` (table of contents, read first on Query and Ingest) and `log.md` (chronological history of everything you do to the wiki). | **AI owns this.** Writes, updates, links. |
 | `5-Raw/` | The source corpus. Every processed source, moved here from Inbox. Images live in `5-Raw/assets/`. Immutable - and complete enough to rebuild the whole wiki from. | AI moves files here, nobody edits them |
 | `6-Templates/` | Document templates. Read `6-Templates/README.md` before writing any document that has one. | Human + AI |
-| `7-Skills/` | Runnable agent skills in Anthropic Skills format | Human installs, AI runs |
+| `7-Skills/` | Runnable agent skills, published into `.claude/skills/` and `.agents/skills/`. See `7-Skills/README.md`. | Human installs, AI runs |
 | `8-System/` | This file plus `about.md` (personal profile) | Rarely edited |
 | `9-Outputs/` | Answers, reports and analyses the AI produces on request. Every substantial Query lands here. | **AI owns this.** |
 

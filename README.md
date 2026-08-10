@@ -34,7 +34,7 @@ We have run this method on our own work for a year and taught it to people who t
 
 ## The skills
 
-Five workflows, one skill each, plus setup, video capture and a way to find out whether you actually understand what you have collected. They trigger on their own when the conversation calls for them - say "process what I dropped in the inbox" and `ingest` shows up - or you invoke them directly with `/query`.
+Five workflows, one skill each, plus setup, video capture and a way to find out whether you actually understand what you have collected. They trigger on their own when the conversation calls for them - say "process what I dropped in the inbox" and `ingest` shows up - or you invoke them directly with `/query`. Claude reads them from `.claude/skills/`, Codex and ChatGPT from `.agents/skills/`; both are published from `7-Skills/`, so they work on a fresh clone without setup.
 
 | Skill | What it does |
 |---|---|
