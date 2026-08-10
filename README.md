@@ -36,23 +36,17 @@ We have run this method on our own work for a year and taught it to people who t
 
 Five workflows, one skill each, plus setup and video capture. They trigger on their own when the conversation calls for them - say "process what I dropped in the inbox" and `ingest` shows up - or you invoke them directly with `/query`.
 
-**`ingest`** turns a source in `2-Inbox/` into wiki. It lists everything the source touches before writing anything and checks that reading with you, then writes the primary page and updates every other page the source has something to say about, with links in both directions. A substantial source moves five pages, or it tells you why it did not.
-
-**`query`** answers from the wiki with `[source: ...]` citations, then saves the answer to `9-Outputs/` with a section naming what the wiki could not answer. When the answer contains synthesis nobody has written down yet, it offers to file that back as a page. Questions make the wiki better instead of only spending it.
-
-**`lint`** is the monthly health check. Ten checks sorted into errors, warnings and notes: pages that contradict each other, claims with no citation, orphans, stale frontmatter, people who became hubs without a page of their own. It writes a ranked report and stops. Repair is a separate decision, and it says so.
-
-**`project-start`** opens a project through an interview that pushes back once per section. "Everyone" is not a segment, "more engagement" is not an outcome, and an empty list of open questions on day one means the project has not been thought about yet. "I do not know" is a valid answer that becomes an open question.
-
-**`project-update`** turns what happened into an artefact in the right subfolder, an entry in the project log and a fresh row in the index. Those last two are the steps that decay, because they produce nothing visible - and a stale index means the next session starts from a false picture of what is live.
-
-**`second-brain-setup`** writes your profile into `8-System/about.md`, either from a pasted assessment (Gallup, DISC, MBTI, whatever you have) or a short interview. Run it again when your role changes and it updates only what moved.
-
-**`youtube`** turns a video into a source note with metadata, key ideas and quotes, then hands it to `ingest`. It wants `yt-dlp` installed; without it, it asks you to paste the transcript and carries on.
+| Skill | What it does |
+|---|---|
+| **`ingest`** | Turns a source in `2-Inbox/` into wiki. Lists everything the source touches and checks that reading with you before writing, then updates every page it touches with links in both directions. A substantial source moves five pages, or it says why it did not. |
+| **`query`** | Answers from the wiki with `[source: ...]` citations, saves the answer to `9-Outputs/` with a section naming what the wiki could not answer, and offers to file new synthesis back as a page. |
+| **`lint`** | Monthly health check. Ten checks sorted into errors, warnings and notes: contradictions, uncited claims, orphans, stale frontmatter, people who became hubs without a page. Writes a ranked report and stops, because repair is a separate decision. |
+| **`project-start`** | Opens a project through an interview that pushes back once per section. "Everyone" is not a segment and "more engagement" is not an outcome. "I do not know" is a valid answer that becomes an open question. |
+| **`project-update`** | Turns what happened into an artefact, a log entry and a fresh index row. The last two decay first because they produce nothing visible, and a stale index means the next session starts from a false picture. |
+| **`second-brain-setup`** | Writes your profile into `8-System/about.md`, from a pasted assessment (Gallup, DISC, MBTI) or a short interview. Re-run it after a role change and it updates only what moved. |
+| **`youtube`** | Turns a video into a source note with metadata, key ideas and quotes, then hands it to `ingest`. Wants `yt-dlp`; without it, it asks you to paste the transcript and carries on. |
 
 The one to try first: drop three articles on one topic into `2-Inbox/`, run `ingest` on each, then ask `query` something none of them answers on its own.
-
-**Zero setup:** no API keys, no accounts, no database. Markdown files and folders. `youtube` wants `yt-dlp` installed and degrades gracefully without it.
 
 ## What it does badly
 
@@ -62,4 +56,4 @@ Read [8-System/limits.md](8-System/limits.md) before you trust it on anything ex
 
 We're Wojtek and Piotr, founders of [Superhero.tech](https://superhero.tech) and [AI Product Heroes](https://aiproductheroes.pl), a course where product people learn to build real products in the AI era. This is the vault we use on our own work, not a demo.
 
-If this is your kind of thing, the [newsletter](https://readwojtech.substack.com) is where we publish the rest.
+If this is your kind of thing, the [newsletter](https://newsletter.superhero.tech) is where we publish the rest.
