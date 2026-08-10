@@ -43,11 +43,11 @@ Read the page, the pages it links to, and where it gets thin, the original sourc
 - **Say why anyone should care before you say how it works.**
 - **Only what the page says.** If the wiki explains a mechanism, explain it. If it does not, that is a gap, and it goes in step 4. Do not supply the missing reasoning yourself, not even flagged as a guess - a flagged guess gets quoted back six months later as if the wiki said it.
 
-**Point at the source after each block**, not inside the sentences. One line under each chunk of explanation:
+**Link to the source after each block**, not inside the sentences. One line under each chunk of explanation:
 
-`-> [[Page Name]] section "Heading"`
+`-> [[Page Name#Section Heading]]`
 
-Citations inside plain language wreck it. A pointer underneath lets the human jump straight to the paragraph you built that block from.
+Use the heading anchor, not the page on its own: a link to the top of a 260-line page is barely a link. The heading must match the page character for character or the anchor dies silently. Citations inside the sentences wreck plain language; a link underneath does not.
 
 ### 4. Name where it went thin
 
@@ -88,7 +88,7 @@ gaps: [how many]
 
 ## The explanation
 [what you said, in the plain language you said it, each block followed by
-its `-> [[Page]] section "Heading"` pointer]
+its `-> [[Page#Heading]]` link]
 
 ## Where it went thin
 **Wiki:** [gaps in the pages]
@@ -137,7 +137,7 @@ Fixing is a different job than studying. Offer, then wait to be asked.
 - Did the explanation stay out of the concept's own vocabulary?
 - Is there a concrete example with people or objects in it?
 - Are the gaps specific, rather than "this section could be clearer"?
-- Does every block carry a pointer back to the page and section it came from?
+- Does every block carry a `[[Page#Heading]]` link, and does every heading exist on the page?
 - Is every sentence something the wiki says, rather than something you worked out?
 - Are the next moves numbered, and do they come from this session rather than a template?
 - Is the session in `9-Outputs/` and the entry in `4-Knowledge/log.md`?
