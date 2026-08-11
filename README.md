@@ -24,7 +24,7 @@ Obsidian is the recommended window onto it (`Open folder as vault`), but nothing
 
 ## Why this exists
 
-We have run this method on our own work for a year and taught it to people who then went and broke it in interesting ways. The same four failures keep showing up.
+We have been running this method on our own work since April and teaching it to people who then go and break it in interesting ways. The same four failures keep showing up.
 
 **Notes accumulate, knowledge does not.** Most systems file a summary per source and call it a knowledge base. `ingest` maps everything a source touches, writes one page per concept, and updates every other page that source has something to say about, with links in both directions. One article moves five pages or it tells you why it did not.
 
